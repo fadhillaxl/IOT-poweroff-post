@@ -20,7 +20,7 @@ void loop() {
     if (voltage <= 0.1) { //0.1 adalah nilai analog menjadi tegangan (GPIO ESP32 menggunakan tegangan referensi 3.3V)
       // Melakukan permintaan GET ke server hanya jika tidak ada daya masuk
       performGetRequest();
-      delay(5000); // Tunggu 5 detik sebelum mengirim permintaan GET selanjutnya
+      // delay(1000); // Tunggu 5 detik sebelum mengirim permintaan GET selanjutnya
     }
   } else {
     connectToWiFi();
