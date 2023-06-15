@@ -29,8 +29,8 @@ const char* host = "esp32";
 const char* ssid = "Ihub61";
 const char* password = "Ihub2019";
 
-const IPAddress staticIP(192, 168, 1, 121);  // Set your desired static IP address
-const IPAddress gateway(192, 168, 1, 1);
+const IPAddress staticIP(192, 168, 34, 6);  // Set your desired static IP address
+const IPAddress gateway(192, 168, 34, 3);
 const IPAddress subnet(255, 255, 255, 0);
 
 
