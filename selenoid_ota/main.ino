@@ -174,20 +174,11 @@ void loop() {
       // if the analog value is high enough, turn on the LED:
       if (mode == "PC_ON") 
       {
-          OTA();
+          
 
           if(WiFi.status() != WL_CONNECTED)
           {
-            while (WiFi.status() != WL_CONNECTED) 
-            {
-              delay(500);
-              Serial.print(".");
-            }
-            Serial.println("");
-            Serial.print("Connected to ");
-            Serial.println(ssid);
-            Serial.print("IP address: ");
-            Serial.println(WiFi.localIP());
+            OTA();
           }
             
             server.handleClient();
